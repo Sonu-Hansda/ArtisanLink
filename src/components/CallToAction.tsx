@@ -22,7 +22,7 @@ export const CallToAction: React.FC = () => {
                         {/* Simple email capture form visual */}
                         <div className="email-input-group">
                             <input type="email" placeholder="email@company.com" className="cta-input" />
-                            <Button variant="primary" onClick={() => window.location.href = 'mailto:hello@artisanlink.global'}>
+                            <Button variant="primary" onClick={() => window.location.href = 'mailto:hello@crossoriginlabs.com'}>
                                 {content.cta.button}
                             </Button>
                         </div>

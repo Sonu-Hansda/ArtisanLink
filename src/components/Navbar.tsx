@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Hexagon } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
@@ -20,9 +20,17 @@ export const Navbar: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, linkName: string) => {
         e.preventDefault();
         setMobileMenuOpen(false);
+
+        const sectionId = linkName.toLowerCase().replace(/\s+/g, '-');
+
+        if (sectionId === 'faq') {
+            navigate('/faq');
+            window.scrollTo(0, 0);
+            return;
+        }
 
         if (location.pathname !== '/') {
             navigate(`/#${sectionId}`);
@@ -40,8 +48,7 @@ export const Navbar: React.FC = () => {
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container navbar-container">
                 <Link to="/" className="logo">
-                    <Hexagon className="logo-icon" size={32} />
-                    <span className="logo-text">ArtisanLink</span>
+                    <span className="logo-text">Cross Origin Labs</span>
                 </Link>
 
                 {/* Desktop Links */}
@@ -51,9 +58,9 @@ export const Navbar: React.FC = () => {
                         return (
                             <a
                                 key={link}
-                                href={`/#${sectionId}`}
+                                href={sectionId === 'faq' ? '/faq' : `/#${sectionId}`}
                                 className="nav-link"
-                                onClick={(e) => handleNavClick(e, sectionId)}
+                                onClick={(e) => handleNavClick(e, link)}
                             >
                                 {link}
                             </a>
@@ -84,9 +91,9 @@ export const Navbar: React.FC = () => {
                             return (
                                 <a
                                     key={link}
-                                    href={`/#${sectionId}`}
+                                    href={sectionId === 'faq' ? '/faq' : `/#${sectionId}`}
                                     className="mobile-nav-link"
-                                    onClick={(e) => handleNavClick(e, sectionId)}
+                                    onClick={(e) => handleNavClick(e, link)}
                                 >
                                     {link}
                                 </a>

@@ -8,7 +8,7 @@ export const Privacy: React.FC = () => {
                 Last updated: {new Date().toLocaleDateString()}
             </p>
             <div style={{ marginTop: '40px', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                <p>ArtisanLink respects your privacy. This policy explains how we handle your data.</p>
+                <p>Cross Origin Labs respects your privacy. This policy explains how we handle your data.</p>
                 <h2 style={{ color: 'var(--text-primary)', marginTop: '30px', marginBottom: '15px' }}>1. Data Collection</h2>
                 <p>We collect minimal data necessary to provide our services, such as contact information when you reach out to us.</p>
                 <h2 style={{ color: 'var(--text-primary)', marginTop: '30px', marginBottom: '15px' }}>2. Data Protection</h2>

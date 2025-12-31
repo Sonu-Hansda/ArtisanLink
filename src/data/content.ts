@@ -117,7 +117,7 @@ export const content = {
     ],
     reviews: [
       {
-        text: "ArtisanLink completely transformed our outdated website into a modern, mobile-friendly platform. Our bounce rate dropped by 40% and leads increased within weeks. Professional, timely, and exceeded expectations!",
+        text: "Cross Origin Labs completely transformed our outdated website into a modern, mobile-friendly platform. Our bounce rate dropped by 40% and leads increased within weeks. Professional, timely, and exceeded expectations!",
         author: "Sanya Sharma",
         role: "Web Development"
       },
@@ -127,7 +127,7 @@ export const content = {
         role: "Mobile Applications"
       },
       {
-        text: "Our user engagement increased by 60% after the UI/UX redesign. ArtisanLink’s team conducted thorough user research and delivered prototypes that made our product feel premium and easy to use.",
+        text: "Our user engagement increased by 60% after the UI/UX redesign. Cross Origin Labs's team conducted thorough user research and delivered prototypes that made our product feel premium and easy to use.",
         author: "Esha Rao",
         role: "UI/UX Design"
       },
@@ -142,7 +142,7 @@ export const content = {
         role: "Graphic & Brand Design"
       },
       {
-        text: "After 3 months of SEO and content strategy with ArtisanLink, our organic traffic grew by 200%. They’re transparent, data-driven, and truly partners in our growth.",
+        text: "After 3 months of SEO and content strategy with Cross Origin Labs, our organic traffic grew by 200%. They’re transparent, data-driven, and truly partners in our growth.",
         author: "Deepak Patel",
         role: "Digital Marketing"
       }
@@ -154,9 +154,39 @@ export const content = {
     button: "Get Started"
   },
   navbar: {
-    links: ["Services", "Portfolio", "Tech Stack", "Testimonials", "Contact"]
+    links: ["Services", "Portfolio", "Tech Stack", "Testimonials", "Contact", "FAQ"]
   },
   footer: {
-    links: ["Terms", "Privacy", "FAQ"]
+    links: ["Terms", "Privacy", "FAQ"],
+    address: "Outer Ring Rd. Bangalore, Karnataka, India\nPincode 560103"
+  },
+  faq: {
+    title: "Frequently Asked Questions",
+    items: [
+      {
+        question: "What services do you offer?",
+        answer: "We offer a comprehensive suite of digital services including Custom Website Development, Native & Cross-Platform Mobile Apps, UI/UX Design, Professional Video Editing, and Visual Branding."
+      },
+      {
+        question: "How does the project timeline typically work?",
+        answer: "Timelines vary depending on scope. A standard corporate website typically takes 4-6 weeks, while complex mobile apps or e-commerce platforms may take 12 weeks or more. We provide a detailed schedule during our initial consultation."
+      },
+      {
+        question: "Do you offer post-launch support and maintenance?",
+        answer: "Yes, we offer ongoing maintenance packages to ensure your digital products remain secure, up-to-date, and optimized. We're partners in your long-term success, not just one-off vendors."
+      },
+      {
+        question: "What is your pricing model?",
+        answer: "We offer both project-based fixed pricing and retainer models, depending on your needs. We believe in transparency—you'll get a detailed proposal with clear deliverables and costs before we start."
+      },
+      {
+        question: "Can you help update or fix an existing website/app?",
+        answer: "Absolutely. We specialize in project rescue and modernization. Whether you need a UI refresh, performance optimization, or new feature integration, our team can step in and elevate your existing product."
+      },
+      {
+        question: "How do you ensure communication throughout the project?",
+        answer: "We use tools like Slack, Trello, and Zoom to keep you in the loop. You'll have a dedicated project manager and regular check-ins to ensure we're always aligned with your vision."
+      }
+    ]
   }
 };
