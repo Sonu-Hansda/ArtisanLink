@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Hexagon } from 'lucide-react';
+import { content } from '../data/content';
 import './Footer.css';
 
 export const Footer: React.FC = () => {
@@ -9,20 +8,31 @@ export const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <div className="container footer-container">
-                <div className="footer-brand">
-                    <Hexagon className="footer-logo-icon" size={24} />
-                    <span className="footer-brand-name">ArtisanLink</span>
+                <div className="footer-content">
+                    <div className="footer-brand">
+                        <span className="footer-brand-name">Cross Origin Labs</span>
+                    </div>
+
+                    <div className="footer-links">
+                        {content.footer.links.map((link) => (
+                            <a key={link} href={`/${link.toLowerCase()}`} className="footer-link">
+                                {link}
+                            </a>
+                        ))}
+                    </div>
+
+                    <div className="footer-address">
+                        <p style={{ whiteSpace: 'pre-line', color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                            {content.footer.address}
+                        </p>
+                    </div>
                 </div>
 
-                <div className="footer-links">
-                    <Link to="/terms" className="footer-link">Terms</Link>
-                    <Link to="/privacy" className="footer-link">Privacy</Link>
-                    <Link to="/faq" className="footer-link">FAQ</Link>
+                <div className="footer-bottom">
+                    <p className="copyright">
+                        © {currentYear} Cross Origin Labs. All rights reserved.
+                    </p>
                 </div>
-
-                <p className="copyright">
-                    © {currentYear} ArtisanLink. All rights reserved.
-                </p>
             </div>
         </footer>
     );
