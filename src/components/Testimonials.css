@@ -1,0 +1,116 @@
+.testimonials-section {
+  padding: 100px 0;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    border: 1px solid var(--border-subtle);
+}
+
+.stat-item {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+}
+
+.stat-divider {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 1px;
+    background: var(--border-subtle);
+}
+
+
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.review-card {
+    background: var(--bg-card);
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid var(--border-subtle);
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.reviewer-avatar {
+    width: 48px;
+    height: 48px;
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+}
+
+.reviewer-name {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.reviewer-role {
+    color: var(--accent-lime);
+    font-size: 0.9rem;
+}
+
+.review-text {
+    color: var(--text-secondary);
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .stat-divider {
+        display: none;
+    }
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}

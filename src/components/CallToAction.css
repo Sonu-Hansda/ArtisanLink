@@ -1,0 +1,71 @@
+.cta-section {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-container {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border: 1px solid var(--border-subtle);
+    border-radius: 32px;
+    padding: 80px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-headline {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.cta-subhead {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.cta-form-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.email-input-group {
+    display: flex;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 6px;
+    border-radius: 99px;
+    border: 1px solid var(--border-subtle);
+}
+
+.cta-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 0 20px;
+    color: white;
+    font-family: var(--font-main);
+    outline: none;
+}
+
+.cta-glow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100px;
+    background: var(--accent-lime);
+    filter: blur(80px);
+    opacity: 0.2;
+    z-index: -1;
+    border-radius: 50%;
+}
