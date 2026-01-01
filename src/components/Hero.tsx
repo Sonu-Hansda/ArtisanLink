@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Play } from 'lucide-react';
+import { Play, ChevronDown } from 'lucide-react';
 import { Button } from './Button';
 import { content } from '../data/content';
 import './Hero.css';
@@ -57,17 +57,16 @@ export const Hero: React.FC = () => {
                 </motion.div>
 
                 <motion.div
-                    className="hero-trusted"
+                    className="hero-scroll-indicator"
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.8 }}
+                    animate={{ opacity: 1, y: [0, 10, 0] }}
+                    transition={{
+                        opacity: { delay: 1, duration: 1 },
+                        y: { repeat: Infinity, duration: 1.5, ease: "easeInOut" }
+                    }}
+                    onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                    <p className="trusted-label">{content.hero.trustedBy}</p>
-                    <div className="trusted-logos">
-                        {content.hero.logos.map((logo) => (
-                            <span key={logo} className="trusted-logo">{logo}</span>
-                        ))}
-                    </div>
+                    <ChevronDown size={32} color="var(--text-secondary)" />
                 </motion.div>
             </div>
         </section>

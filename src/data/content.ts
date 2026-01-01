@@ -154,7 +154,7 @@ export const content = {
     button: "Get Started"
   },
   navbar: {
-    links: ["Services", "Portfolio", "Tech Stack", "Testimonials", "Contact", "FAQ"]
+    links: ["Home", "Services", "Portfolio", "Tech Stack", "Testimonials", "Contact", "FAQ"]
   },
   footer: {
     links: ["Terms", "Privacy", "FAQ"],

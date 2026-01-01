@@ -62,10 +62,29 @@
     overflow: hidden;
 }
 
-.project-image {
+.project-image-scroll {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Hide scrollbar for cleaner look */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.2) transparent;
+}
+
+.project-image-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.project-image-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .project-overlay {

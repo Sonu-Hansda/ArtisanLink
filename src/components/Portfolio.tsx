@@ -58,11 +58,13 @@ export const Portfolio: React.FC = () => {
                             >
                                 <BrowserFrame className="featured-browser">
                                     <div className="browser-image-container">
-                                        <img
-                                            src={projects[activeIndex].image}
-                                            alt={projects[activeIndex].name}
-                                            className="project-image"
-                                        />
+                                        <div className="project-image-scroll">
+                                            <img
+                                                src={projects[activeIndex].image}
+                                                alt={projects[activeIndex].name}
+                                                className="project-image"
+                                            />
+                                        </div>
                                         <div className="project-overlay">
                                             <div>
                                                 <h3 className="project-title">{projects[activeIndex].name}</h3>

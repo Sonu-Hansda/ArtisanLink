@@ -108,4 +108,18 @@
   }
   
 
+
+}
+
+.hero-scroll-indicator {
+    margin-top: 40px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.hero-scroll-indicator:hover {
+    opacity: 1;
+    color: var(--accent-lime);
 }
