@@ -1,6 +1,7 @@
 import React from 'react';
-import { MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import whatsappIcon from '../assets/whatsapp.png';
+
 
 export const WhatsAppButton: React.FC = () => {
     return (
@@ -15,7 +16,11 @@ export const WhatsAppButton: React.FC = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
         >
-            <MessageCircle size={28} />
+            <img
+                src={whatsappIcon}
+                alt="WhatsApp"
+                style={{ width: '48px', height: '48px', objectFit: 'contain' }}
+            />
         </motion.a>
     );
 };
