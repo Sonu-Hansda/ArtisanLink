@@ -32,6 +32,14 @@ export const Navbar: React.FC = () => {
             return;
         }
 
+        if (sectionId === 'home') {
+            if (location.pathname !== '/') {
+                navigate('/');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
+
         if (location.pathname !== '/') {
             navigate(`/#${sectionId}`);
         } else {
