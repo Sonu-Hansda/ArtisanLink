@@ -53,8 +53,11 @@ export const content = {
       { name: "Node.js", category: "Backend" },
       { name: "Express", category: "Backend" },
       { name: "TypeScript", category: "Language" },
+      { name: "TypeScript", category: "Language" },
       { name: "After Effects", category: "Video" },
-      { name: "PostgreSQL", category: "Database" }
+      { name: "PostgreSQL", category: "Database" },
+      { name: "Next JS", category: "Frontend" },
+      { name: "Spring Boot", category: "Backend" }
     ]
   },
   features: {
@@ -112,7 +115,7 @@ export const content = {
     headline: "What our client say about us",
     stats: [
       { value: "45+", label: "Happy Clients" },
-      { value: "5k+", label: "Projects Done" },
+      { value: "78+", label: "Projects Done" },
       { value: "4.8", label: "Rating" }
     ],
     reviews: [
