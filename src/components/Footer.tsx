@@ -22,9 +22,17 @@ export const Footer: React.FC = () => {
                     </div>
 
                     <div className="footer-address">
-                        <p style={{ whiteSpace: 'pre-line', color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                        <p style={{ whiteSpace: 'pre-line', color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5', marginBottom: '8px' }}>
                             {content.footer.address}
                         </p>
+                        {'email' in content.footer && (
+                            <a
+                                href={`mailto:${(content.footer as any).email}`}
+                                style={{ display: 'block', color: 'var(--text-primary)', fontSize: '0.9rem', textDecoration: 'none', fontWeight: 500 }}
+                            >
+                                {(content.footer as any).email}
+                            </a>
+                        )}
                     </div>
                 </div>
 

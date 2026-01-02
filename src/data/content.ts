@@ -161,7 +161,8 @@ export const content = {
   },
   footer: {
     links: ["Terms", "Privacy", "FAQ"],
-    address: "Outer Ring Rd. Bangalore, Karnataka, India\nPincode 560103"
+    address: "Outer Ring Rd. Bangalore, Karnataka, India\nPincode 560103",
+    email: "business.crossoriginlabs@gmail.com"
   },
   faq: {
     title: "Frequently Asked Questions",
