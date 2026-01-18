@@ -1,7 +1,6 @@
 import sanaaya from "../assets/sanaaya.png";
 import citikeeper from "../assets/citikeeper.png";
 import cybershield from "../assets/cybershield.png";
-import internit from "../assets/inter-nit.png";
 
 export const content = {
   hero: {
@@ -34,12 +33,6 @@ export const content = {
         category: "Web App",
         url: "https://git-bytes.vercel.app/",
         image: cybershield
-      },
-      {
-        name: "Inter NIT",
-        category: "project",
-        url: "https://inter-nit.sacnitjsr.org/",
-        image: internit
       },
     ]
   },
